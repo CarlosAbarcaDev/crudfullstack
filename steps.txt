@@ -1,0 +1,42 @@
+liks: https://github.com/fazt/mern-crud-auth/blob/master/src/routes/tasks.routes.js
+
+- creacion de carpetas
+- instalacion de nodemon "npm i nodemon -D"
+- modificacion de package.json "dev": "nodemon src/index.js"
+- instalacion de morgan (para ver peticiones)
+- instalacion de mongoDB
+- instalacion de mongoose
+- configuracion de db.js y exportar a app.js
+- creacion de modelo user
+- creacion de rutas en routes.js
+- creacion del controlador para auth
+- importarlo en app.js
+- instalar thunder client como extencion del vscode
+- usar app.use(express.json()) en app.js para que express entienda los json
+- configurar el controlador para que lea usuario email y contra en los controladores
+- importar el modelo de users al controlador y crear un nuevo usuario con new User
+- instalacion de npm i bcryptjs para encriptacion de password
+- configuracion en el controlador para guardar la pass encriptada
+- instalacion de npm i jsonwebtoken y configuracion en el controlador
+- crear en libs "jwt.js" para configurar la creacion del token
+- crear en config.js la variable TOKEN_SECRET para que este accesible a todo el doc
+- configuracion del login en los controlers
+- creacion del logout en controllers
+
+*********** rutas protegidas ***********
+- creacion de la funcion en auth y de la ruta en routes
+- creacion del middleware para validar el token
+- instalar npm i cookie-parser para leer las cookies y configurar app.js
+- utilizar el middleware en la ruta para pasar por la verificacion primero
+
+*********** tasks ********************
+- creacion de archivo en routes para crear las rutas que contendran las tasks
+- creacion de controlador para las tasks
+- creacion del modelo para la task
+- modificacion del controlador para hacer las acciones del crud y agregarle los ids del user para que las task sean ligadas a el usuario
+
+*********** validacion de datos *******************
+- instalacion de npm i zod
+- creacion de los schemas en la carpeta schema
+- crear el validador en la carpeta middleware
+- uso en las rutas que van a ser validadas
